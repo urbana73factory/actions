@@ -55,7 +55,7 @@ async function run() {
       const envName = name.toUpperCase().replace(/[^A-Z0-9_]/g, '_');
       fs.appendFileSync(
         process.env.GITHUB_ENV,
-        `${envName}=${value}\n`
+        `u73f_${envName}=${value}\n`
       );
 
       core.info(`Secret "${name}" exported as ${envName}`);
