@@ -1,0 +1,25 @@
+name: "Read Azure Key Vault Secrets"
+description: "Reads one or multiple secrets from Azure Key Vault"
+runs:
+  using: "node20"
+  main: "index.js"
+
+inputs:
+  client_id:
+    description: "Azure Service Principal Client ID"
+    required: true
+  client_secret:
+    description: "Azure Service Principal Client Secret"
+    required: true
+  tenant_id:
+    description: "Azure Tenant ID"
+    required: true
+  keyvault_uri:
+    description: "URI of the Key Vault (e.g., https://myvault.vault.azure.net/)"
+    required: true
+  secret_names:
+    description: "Comma-separated list of secret names to read"
+    required: true
+
+outputs:
+  # Se generarán dinámicamente desde index.js según los secretos leídos

@@ -1,0 +1,17 @@
+{
+  "name": "read-keyvault-secrets-action",
+  "version": "1.0.0",
+  "description": "Custom GitHub Action to read secrets from Azure Key Vault",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.0",
+    "@azure/identity": "^4.13.0",
+    "@azure/keyvault-secrets": "^4.10.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
