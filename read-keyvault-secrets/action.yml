@@ -14,7 +14,7 @@ inputs:
   tenant_id:
     description: "Azure Tenant ID"
     required: true
-  keyvault_uri:
+  keyvault_name:
     description: "URI of the Key Vault (e.g., https://myvault.vault.azure.net/)"
     required: true
   secret_names:
