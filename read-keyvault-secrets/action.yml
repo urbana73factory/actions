@@ -2,7 +2,7 @@ name: "Read Azure Key Vault Secrets"
 description: "Reads one or multiple secrets from Azure Key Vault"
 runs:
   using: "node20"
-  main: "index.js"
+  main: "dist/index.js"
 
 inputs:
   client_id:
